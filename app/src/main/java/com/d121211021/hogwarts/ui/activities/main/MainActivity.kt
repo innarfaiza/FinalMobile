@@ -55,7 +55,7 @@ class MainActivity : ComponentActivity() {
                         CenterAlignedTopAppBar(
                             title = {
                                 Text(
-                                    text = "Children's Literature",
+                                    text = "Students of Hogwarts School of Witchcraft and Wizardry",
                                     fontWeight = FontWeight.SemiBold,
                                 )
                             }
@@ -117,7 +117,7 @@ class MainActivity : ComponentActivity() {
                 .border(1.dp, Color.Gray, RoundedCornerShape(8.dp),)
                 .clickable {
                     val intent = Intent(this, DetailActivity::class.java)
-                    intent.putExtra("BOOK", characters)
+                    intent.putExtra("CHARACTERS", characters)
                     startActivity(intent)
                 }
         ) {
